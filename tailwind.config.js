@@ -2,11 +2,17 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    fontFamily: {
+      monoSpace: ["Space Mono", "monospace"],
+    },
     screens: {
       sm: "480px",
       md: "768px",
       lg: "9769x",
       xl: "1440px",
+    },
+    letterSpacing: {
+      widest: ".40em",
     },
     extend: {
       colors: {
