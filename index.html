@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -18,79 +24,115 @@
     <style></style>
   </head>
   <body class="bg-primaryColor4">
-    <div class="my-8">
-      <h1
-        class="text-2xl font-bold font-monoSpace uppercase text-center text-primaryColor2 tracking-widest"
+    <main>
+      <div class="my-8 md:mt-[7rem]">
+        <h1
+          class="text-2xl font-bold font-monoSpace uppercase text-center text-primaryColor2 tracking-widest"
+        >
+          spli<br />tter
+        </h1>
+      </div>
+      <div
+        class="bg-whiteColor md:w-[40rem] md:mx-auto p-4 rounded-t-3xl md:rounded-3xl md:flex"
       >
-        spli<br />tter
-      </h1>
-    </div>
-    <div class="bg-whiteColor p-4 rounded-t-3xl md:flex">
-      <div class="bg-red-100 p-4">
-        <form action="">
+        <div class="bg-white p-4 md:w-1/2">
+          <form action="">
+            <label
+              for="bill"
+              class="font-monoSpace text-primaryColor3 font-bold"
+              id="bills"
+              >Bill</label
+            >
+            <br />
+            <input
+              id="bill"
+              type="text"
+              placeholder="0.00"
+              class="focus:ouline-none text-right py-2 px-2 bg-primaryColor5 focus:border-red-500 rounded-md focus:ring-1 focus:ring-sky-500 w-full placeholder-primaryColor1 text-primaryColor1 font-bold text-xl bg-dollar"
+            />
+          </form>
+          <div class="my-4">
+            <h3 class="text-primaryColor3 leading-10 font-medium">
+              Select Tip %
+            </h3>
+            <div class="grid md:grid-cols-3 grid-cols-2 gap-4">
+              <button
+                class="bg-primaryColor1 text-whiteColor py-2 text-center rounded-md w-full font-bold text-xl"
+              >
+                5%
+              </button>
+              <button
+                class="bg-primaryColor1 text-whiteColor py-2 text-center rounded-md w-full font-bold text-xl"
+              >
+                10%
+              </button>
+              <button
+                class="bg-primaryColor1 text-whiteColor py-2 w-full rounded-md font-bold text-xl"
+              >
+                15%
+              </button>
+
+              <button
+                class="bg-primaryColor1 text-whiteColor py-2 w-full rounded-md font-bold text-xl"
+              >
+                25%
+              </button>
+              <button
+                class="bg-primaryColor1 text-whiteColor py-2 w-full rounded-md font-bold text-xl"
+              >
+                50%
+              </button>
+              <input
+                type="text"
+                id="custom"
+                class="rounded-md font-bold text-xl px-2 w-full font-bold bg-primaryColor5 text-primaryColor2"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
           <label
-            for="bill"
-            class="font-monoSpace text-primaryColor3 font-bold"
+            for="people"
+            class="font-monoSpace leading-10 text-primaryColor3 font-bold"
             id="bills"
-            >Bill</label
+            >Number of People</label
           >
           <br />
           <input
-            id="bill"
+            id="people"
             type="text"
-            placeholder="110"
-            class="focus:ouline-none border border-slate-300 focus:border-red-500 rounded-md focus:ring-1 focus:ring-sky-500 placeholder-red-400"
+            placeholder="0"
+            class="focus:ouline-none bg-primaryColor5 focus:border-red-500 w-full rounded-md focus:ring-1 focus:ring-sky-500 placeholder-primaryColor1 text-primaryColor1 font-bold text-xl py-2 px-2 text-right"
           />
-        </form>
-        <div class="mt-6">
-          <h3 class="text-primaryColor1 font-medium">Select Tip %</h3>
-          <div class="flex flex-wrap gap-2">
-            <button
-              class="bg-primaryColor1 text-whiteColor py-2 w-24 rounded-md"
-            >
-              5%
-            </button>
-            <button
-              class="bg-primaryColor1 text-whiteColor py-2 w-24 text-center rounded-md"
-            >
-              5%
-            </button>
-            <button
-              class="bg-primaryColor1 text-whiteColor py-2 w-24 rounded-md"
-            >
-              5%
-            </button>
-            <button
-              class="bg-primaryColor1 text-whiteColor py-2 w-24 rounded-md"
-            >
-              5%
-            </button>
-            <button
-              class="bg-primaryColor1 text-whiteColor py-2 w-24 rounded-md"
-            >
-              5%
-            </button>
-            <input
-              type="text"
-              id="custom"
-              class="rounded-md w-24"
-              placeholder="Custom"
-            />
+        </div>
+        <div class="bg-primaryColor1 p-8 rounded-xl md:w-1/2">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-white font-medium">Tip Amount</p>
+              <p class="text-primaryColor2">/ person</p>
+            </div>
+            <p class="text-2xl font-bold text-primaryColor6">$0.00</p>
           </div>
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-white font-medium">Total</p>
+              <p class="text-primaryColor2">/ person</p>
+            </div>
+            <p class="text-2xl font-bold text-primaryColor6">$0.00</p>
+          </div>
+          <button
+            class="bg-primaryColor6 w-full text-center uppercase rounded-md py-2 text-primaryColor1 font-bold text-xl"
+          >
+            reset
+          </button>
         </div>
       </div>
-      <div class="h-8 bg-primaryColor1 p-8"></div>
-    </div>
-    <p class="text-sm font-monoSpace">
-      Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-      person Total / person Reset
-    </p>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Jeremiah Lateef</a>.
-    </div>
+      <div class="text-center text-primaryColor1 text-xl">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jeremiah Lateef</a>.
+      </div>
+    </main>
   </body>
 </html>
