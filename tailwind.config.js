@@ -21,7 +21,12 @@ module.exports = {
         primaryColor3: "hsl(184, 14%, 56%)",
         primaryColor4: "hsl(185, 41%, 84%)",
         primaryColor5: " hsl(189, 41%, 97%)",
+        primaryColor6: " hsl(172, 67%, 45%)",
         whiteColor: "hsl(0, 0%, 100%)",
+      },
+      backgroundImage: {
+        dollar: "url('./images/icon-dollar.svg')",
+        person: "url('./images/icon-person.svg')",
       },
     },
   },
